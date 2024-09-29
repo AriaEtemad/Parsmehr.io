@@ -1,0 +1,579 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+}
+.hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header and sections styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* Social icons and buttons */
+.s1 {
+    background-color: chocolate;
+    margin-top: 0;
+    padding-top: 0;
+    min-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s1 p {
+    padding-left: 30px;
+    color: white;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+/* Main menu and search styling */
+.s2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.img1 {
+    height: 50px;
+    order: -1;
+    margin-right: auto;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    color: #444343;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+.main-menu a {
+    color: #54595F;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: chocolate;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#search-input {
+    padding: 10px;
+    border: none;
+    width: 200px;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: chocolate;
+    color: #fff;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Slider and content styling */
+.slider {
+    background: linear-gradient(to bottom, rgba(255, 248, 231, 0.1), rgba(255, 115, 0, 0.377)), 
+        url(img/tild3739-3230-4266-b865-383864386130__photo_1.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70%;
+    transform: translateY(-50%);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 159, 91, 0.178);
+    z-index: 1;
+}
+
+.slider-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  #54595F;
+    z-index: 2;
+    text-align: center;
+    padding: 50px;
+    font-size: 22px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.slider-text span {
+    position: relative;
+    margin-top: 200px;
+}
+
+.slider-text span::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 5px;
+    background-color: rgb(240, 121, 10);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    text-align: left;
+    font-size: 30px;
+    color: #54595F;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.content {
+    padding-top: 122vh;
+}
+
+.title1, .title2, .title3 {
+    text-align: center;
+    font-size: 30px;
+    color: #54595F;
+    position: relative;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 30px;
+    color: #54595F;
+    position: relative;
+    margin-top: 2px; /* Adjust margin-top to bring it down */
+}
+
+
+.title1 span, .title2 span, .title3 span {
+    position: relative;
+}
+
+.title1 span::after, .title2 span::after, .title3 span::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 5px;
+    background-color: rgb(240, 121, 10);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #54595F;
+    margin-top: 2%;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px;
+}
+
+.services img {
+    width: calc(20% - 30px);
+    margin-bottom: 10px;
+    padding: 80px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.services2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px;
+}
+
+.services2 img {
+    width: calc(20% - 20px);
+    margin-bottom: 10px;
+    padding: 80px;
+    padding-top: 2px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+/* About Section */
+.container {
+    background: linear-gradient(to bottom, #f7ba9d 100%, #fdddc2 100%);
+    height: 600px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 9px;
+}
+.text1{
+    margin-top: 50px;
+}
+
+.img2 {
+    height: 370px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 30px;
+    margin-top: 40px;
+    animation: fadeInLeft 2s ease-in-out;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.about-section img {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 30px;
+    border-radius: 30px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+    animation: fadeInRight 2s ease-in-out;
+}
+
+.about-text h4 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #444343;
+}
+
+.about-text p {
+    text-align: justify;
+}
+
+/* Team Section */
+.team-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.team-section img.img3 {
+    flex: 1;
+    max-width: 60%;
+    margin-right: 30px;
+    border-radius: 30px;
+    margin-top: 50px;
+    animation: fadeInLeft 2s ease-in-out;
+}
+
+.team-text {
+    flex: 1;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    animation: fadeInRight 2s ease-in-out;
+}
+
+.team-text p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.small-picture {
+    margin-top: 50px;
+    width: 45%;
+    align-self: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.team-text h3 {
+    text-align: center;
+    color: #54595F;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: #444343;
+    color: white;
+}
+
+.footer .logo img {
+    height: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: color 0.3s;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+    color: #ffd700;
+}
+
+.footer .contact-info p {
+    margin-bottom: 10px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.footer .contact-info p i {
+    margin-right: 10px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color:chocolate;
+    color: #fff;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;  /* Ensure the footer spans the full width */
+    margin: 0; /* Remove any margin */
+    height: 5px;
+    margin-top: 30px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+
+.footer-item i {
+    margin-right: 10px;
+}
+
+.footer-item p {
+    margin: 0;
+    color: #fff;
+}
+.footer-item1 p {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* General image styles */
+/* General image styles */
+img {
+    transition: transform 0.3s ease-out;
+    transform-origin: center center;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    width: 95%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Zoom-in effect on hover */
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Ensure crisp rendering */
+img {
+    image-rendering: optimizeQuality; /* Fallback for older browsers */
+    image-rendering: -webkit-optimize-contrast; /* WebKit (Chrome, Safari) */
+    image-rendering: pixelated; /* Firefox */
+}
+
+.container {
+    background: linear-gradient(to bottom, #f7ba9d 100%, #fdddc2 100%);
+    height: 540px;
+    padding-top: 30px; /* Add padding at the top to move the content down */
+}
+
+.title2 {
+    text-align: center;
+    font-size: 30px;
+    color: #54595F;
+    position: relative;
+    margin-top: 0; /* Reset margin as we are using padding on the container */
+}
+
+.title2 span {
+    position: relative;
+}
+
+.title2 span::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 5px;
+    background-color: rgb(240, 121, 10);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

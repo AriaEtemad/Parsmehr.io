@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="parsmehrstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <section class="s1">
+            <div>
+                <p>call us : 09108109447</p>
+            </div>
+            <div>
+                <div class="social-icons">
+                    <a href="#" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="facebook-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="twitter-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="s2">
+            <div>
+                <img class="img1" src="img/cropped-logo-redesign-white-orange-background-300x130.png" alt="Logo">
+            </div>
+            <nav class="main-menu">
+                <a href="#" class="menu-btn">Home</a>
+                <a href="#" class="menu-btn">Shop</a>
+                <a href="#" class="menu-btn">Blog</a>
+                <a href="#" class="menu-btn">Contact</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="s3">
+            <div class="slider">
+                <div class="slider-text">
+                    <span>Pars Mehr computer engineering and technical company</span>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="title1">
+                <span class="text">Our Services</span>
+            </div>
+            <div class="text">
+                <p>Pars Mehr Engineering Company is a professional and experienced team that has identified today's
+                    engineering needs and optimized methods to meet these needs by using computers and technology to
+                    simulate and analyze problems, considering the most cost-effective Provides solutions in terms of
+                    time and cost.</p>
+            </div>
+            <div class="services">
+                <img class="Services_image" src="img/CAD-1-250x300.jpg" alt="">
+                <img src="img/CAE-1-250x300.jpg" alt="">
+                <img src="img/IT-1-250x300.jpg" alt="">
+
+            </div>
+            <div class="services2">
+                <img class="Services_image1" src="img/الکترونیک-و-آکوستیک-250x300.jpg" alt="">
+                <img src="img/شبکه-250x300.jpg" alt="">
+            </div>
+        </section>
+      <section>
+    <div class="container">
+        <div class="title2">
+            <span class="text1">About us</span>
+        </div>
+        <div class="about-section">
+            <img class="img2" src="img/businesspeople-office-meeting-scaled-copy-1536x866.jpg" alt="">
+            <div class="about-text">
+                <h4>Learn more about us</h4>
+                <p>Pars Mehr Engineering Company operates with years of experience in the field of engineering
+                    services, especially in the field of the automobile industry.
+                    Relying on the knowledge of its experienced and efficient employees, this company has always
+                    been in sync with the developments of the engineering world to provide the best engineering
+                    services to its customers and industrial owners by providing new solutions. One of the goals
+                    of
+                    the committed managers and expert colleagues of this company is to understand the needs of
+                    customers and provide optimal services based on the standards of the world. Among the main
+                    fields of activity of this company can be counted mechanical engineering services by
+                    computer
+                    (CAE) and information technology (IT). One of the strategic attitudes of this company is the
+                    reduction of production costs, high quality, accuracy and speed in all engineering services
+                    and
+                    above all meeting the demands of customers and obtaining their satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section>
+            <div class="title3">
+                <span class="text2">Our Team</span>
+            </div>
+            <div class="team-section">
+                <div class="team-text">
+                    <p>Our team consists of people with special abilities and characteristics who, in addition to their individual efficiency and implementation of their personal capabilities, can communicate well with other members of the team and have the spirit of promoting joint work.</p>
+                    <img class="small-picture" src="img/-qh5dm3y02g59p22amrba7lzfzztopyifz72m9lw828.jpg" alt="Small picture">
+                    <h3>Suhrab Khoshbuie</h3>
+                </div>
+                <img class="img3" src="img/group-people-working-out-business-plan-office-1-1536x1024.jpg" alt="">
+            </div>
+        </section>
+        
+
+
+    </main>
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-item1">
+                <p>© 2023 Aria Etemad. All rights reserved.</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Afif Abad St. - between 17th and 19th alley, Wafa building</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>09108109447</p>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@parsmehrco.ir</p>
+            </div>
+        
+        </div>
+    </footer>
+    
+
+    <script>
+        // JavaScript code for sticky header behavior
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scroll down
+                header.classList.add('hide');
+            } else {
+                // Scroll up
+                header.classList.remove('hide');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        
+        
+    </script>
+    
+</body>
+
+</html>
